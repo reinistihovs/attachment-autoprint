@@ -58,9 +58,6 @@ foreach($m in $messages) {
 #wait 20 seconds, in some cases files appear to late.
 timeout 20
 
-#atzimejam visu ka lasitu
-#$client.Folders.Inbox.Search("ALL", $client.Behavior.MessageFetchMode, $numberOfMessagesLimit) | ForEach-Object {$_.Flags.Add("\SEEN")}
-
 
 #delete empty attechements and files smaller than 1kb
 Get-ChildItem "C:\attachment-print\attachments\" -Filter *.stat -recurse |?{$_.PSIsContainer -eq $false -and $_.length -lt 1000}|?{Remove-Item $_.fullname -WhatIf}
