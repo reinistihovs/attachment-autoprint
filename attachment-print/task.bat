@@ -1,0 +1,1 @@
+powershell.exe -ExecutionPolicy Bypass C:\attachment-print\print.ps1
