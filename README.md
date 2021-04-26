@@ -7,8 +7,11 @@ Instructions:
 1) Place files in C:\attachment-print
 
 2) edit the following lines in C:\attachment-print\print.ps1
+
 $Username = "example@example.com"
+
 $Password = "ExamplePass"
+
 $client.Host = "mail.example.com"
 
 3) Create a recurring task in task scheduler, which executes C:\attachment-print\task.vbs
