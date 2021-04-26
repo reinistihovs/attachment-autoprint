@@ -8,15 +8,15 @@ Instructions:
 
 2) edit the following lines in C:\attachment-print\print.ps1
 
-$Username = "example@example.com"
+  $Username = "example@example.com"
 
-$Password = "ExamplePass"
+  $Password = "ExamplePass"
 
-$client.Host = "mail.example.com"
+  $client.Host = "mail.example.com"
 
 3) Create a recurring task in task scheduler, which executes C:\attachment-print\task.vbs
 
-P.S.
+ P.S.
 For PDF printing I have tested only with adobe reader set as default PDF program.
 
 
